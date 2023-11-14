@@ -13,10 +13,11 @@ public class PlayerMovement : MonoBehaviour
     float horizontalInput;
     bool jumpInput;
 
-    private float dashingVelocity = 40f;
+    [SerializeField] private float dashingVelocityX = 40f;
+    [SerializeField] private float dashingVelocityY = 40f;
     private float dashingTime = 0.1f;
     private Vector2 dashingDir;
-    private bool isDashing;
+    private bool isDashing = false;
     //private bool canDash = true;
 
     // Start is called before the first frame update
@@ -29,34 +30,32 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        this.horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        bool dashInput = Input.GetButtonDown("Dash");
-        if(dashInput /*&& canDash*/){
-            isDashing = true;
-            //scanDash = false;
-            dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            if(dashingDir == Vector2.zero){
-                dashingDir = new Vector2(transform.localScale.x, 0f);
-            }
-            StartCoroutine(StopDashing());
-        }
-
-        if(isDashing){
-            body.velocity = dashingDir.normalized * dashingVelocity;
+        if(isDashing)
             return;
+
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if(Input.GetButtonDown("Dash") /*&& canDash*/){
+            StartCoroutine(Dash());
         }
+        
 
         //if(isGrounded()){
         //    canDash = true;
         //}
 
-        Move();
+        
         Jump();
     }
 
+    private void FixedUpdate(){
+        if(isDashing)
+            return;
+        Move();
+    }
+
     private void Move(){
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetButtonDown("Sprint"))
             body.velocity = new Vector2(SPRINT_SPEED * horizontalInput, body.velocity.y);
         else
             body.velocity = new Vector2(SPEED * horizontalInput, body.velocity.y);
@@ -64,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump(){
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") /* && isGrounded()*/)
             body.velocity = new Vector2(body.velocity.x, JUMP_SPEED);
     }
 
@@ -72,17 +71,26 @@ public class PlayerMovement : MonoBehaviour
         bool movingLeft = body.velocity.x < 0;
         bool movingRight = body.velocity.x > 0;
         if(movingLeft){
-            transform.localScale = new Vector2(-1f,transform.localScale.y);
+            transform.localScale = new Vector2(-.25f,transform.localScale.y);
         }
         else if(movingRight){
-            transform.localScale = new Vector2(1f,transform.localScale.y);
+            transform.localScale = new Vector2(.25f,transform.localScale.y);
         }
     }
 
-    private IEnumerator StopDashing(){
+    private IEnumerator Dash(){
+        isDashing = true;  
+        //canDash = false;
+        float yVelocity = body.velocity.y;
+        float xVelocity = body.velocity.x;
+        dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            if(dashingDir == Vector2.zero){
+                dashingDir = new Vector2(transform.localScale.x, 0f);
+            }
+        body.velocity = new Vector2(dashingDir.normalized.x * dashingVelocityX, dashingDir.normalized.y * dashingVelocityY);
         yield return new WaitForSeconds(dashingTime);
+        body.velocity = new Vector2(xVelocity, yVelocity);
         isDashing = false;
-
     }
 
 

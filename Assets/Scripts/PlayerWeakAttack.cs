@@ -6,7 +6,7 @@ public class PlayerWeakAttack : MonoBehaviour
 {
     private GameObject attackArea = default;
     private bool attacking = false;
-    private float timeToAttack = 0.25f;
+    private float timeToAttack = 0.5f;
     private float timer = 0f;
 
     // Start is called before the first frame update

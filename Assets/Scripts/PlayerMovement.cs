@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalInput;
     bool jumpInput;
 
+    private Animator anim;
+
     [SerializeField] private float dashingVelocityX = 40f;
     [SerializeField] private float dashingVelocityY = 40f;
     private float dashingTime = 0.1f;
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
+	anim = GetComponent<Animator>();
         
     }
 
@@ -32,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(isDashing)
             return;
-
+	
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if(Input.GetButtonDown("Dash") /*&& canDash*/){
@@ -46,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         
         Jump();
+	UpdateAnimationUpdate();
     }
 
     private void FixedUpdate(){
@@ -55,16 +59,23 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Move(){
-        if(Input.GetButtonDown("Sprint"))
+        if(Input.GetButtonDown("Sprint")){
             body.velocity = new Vector2(SPRINT_SPEED * horizontalInput, body.velocity.y);
-        else
+	    anim.SetBool("Sprint", true);
+	    anim.SetBool("Walking", false);
+	}
+        else{
             body.velocity = new Vector2(SPEED * horizontalInput, body.velocity.y);
+	    anim.SetBool("Walking", true);
+	    anim.SetBool("Sprint", false);
+	}
         checkForFlipping();
     }
 
     private void Jump(){
-        if(Input.GetButtonDown("Jump") /* && isGrounded()*/)
+        if(Input.GetButtonDown("Jump") /* && isGrounded()*/){
             body.velocity = new Vector2(body.velocity.x, JUMP_SPEED);
+	}
     }
 
     private void checkForFlipping(){
@@ -93,5 +104,21 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
     }
 
+    private void UpdateAnimationUpdate(){
+	if(body.velocity.x == 0){
+	    anim.SetBool("Walking", false);
+	    anim.SetBool("Sprint", false);
+	}
+	if(body.velocity.y > 0){
+	    anim.SetBool("GoingUp", true);
+	    anim.SetBool("Falling", false);
+	} else if(body.velocity.y < 0){
+	    anim.SetBool("GoingUp", false);
+	    anim.SetBool("Falling", true);
+	} else{
+	    anim.SetBool("GoingUp", false);
+	    anim.SetBool("Falling", false);
+	}
+    }
 
 }

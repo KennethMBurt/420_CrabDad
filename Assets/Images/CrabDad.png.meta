@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 73
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,12 +107,12 @@ TextureImporter:
       name: GoingDown_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 6
-        width: 2048
-        height: 1530
+        x: 239
+        y: 246
+        width: 835
+        height: 577
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,137 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: GoingDown_1
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 871faac102ffc2f429f3a51173d2a1e4
-      internalID: 567333621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoingDown_2
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8698c8c068016194fb3b243e981a9107
-      internalID: -1742341060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoingDown_3
-      rect:
-        serializedVersion: 2
-        x: 6144
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7748d7675d2783147ab4e420389b0b1a
-      internalID: 520027118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoingDown_4
-      rect:
-        serializedVersion: 2
-        x: 8192
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6a38b73afe30d543891cbdd1f8aac77
-      internalID: -1988260990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoingDown_5
-      rect:
-        serializedVersion: 2
-        x: 10240
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 629ee2e8b3731d64f838c88262c1cd96
-      internalID: -271541920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoingDown_6
-      rect:
-        serializedVersion: 2
-        x: 12288
-        y: 6
-        width: 2048
-        height: 1530
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b1d2642757498e4d85839257843f0ea
-      internalID: 530534848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -264,10 +138,7 @@ TextureImporter:
       GoingDown_0: -1353573980
       GoingDown_2: -1742341060
       GoingDown_1: 567333621
-      GoingDown_5: -271541920
-      GoingDown_4: -1988260990
       GoingDown_3: 520027118
-      GoingDown_6: 530534848
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

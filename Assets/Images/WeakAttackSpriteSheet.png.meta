@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 73
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,12 +107,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 204
+        y: 1770
+        width: 900
+        height: 559
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 2292
+        y: 1744
+        width: 807
+        height: 621
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 4384
+        y: 1712
+        width: 797
+        height: 641
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 6549
+        y: 1673
+        width: 561
+        height: 674
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 8000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 8593
+        y: 1676
+        width: 712
+        height: 667
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 10000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 10646
+        y: 1673
+        width: 803
+        height: 677
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,33 +233,12 @@ TextureImporter:
       name: WeakAttackSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 12000
-        y: 1536
-        width: 2000
-        height: 1536
+        x: 12690
+        y: 1677
+        width: 708
+        height: 670
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6680feadea2f52d4d90c190ddb877969
-      internalID: 32732740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WeakAttackSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2000
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,15 +251,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeakAttackSpriteSheet_8
+      name: WeakAttackSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 2000
-        height: 1536
+        x: 403
+        y: 137
+        width: 564
+        height: 678
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,15 +272,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeakAttackSpriteSheet_9
+      name: WeakAttackSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 2000
-        height: 1536
+        x: 2335
+        y: 175
+        width: 788
+        height: 645
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,15 +293,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeakAttackSpriteSheet_10
+      name: WeakAttackSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 0
-        width: 2000
-        height: 1536
+        x: 4338
+        y: 206
+        width: 819
+        height: 620
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -330,69 +309,6 @@ TextureImporter:
       bones: []
       spriteID: e485ab3636bba314e8efcc8c4b5806cd
       internalID: -1891853529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WeakAttackSpriteSheet_11
-      rect:
-        serializedVersion: 2
-        x: 8000
-        y: 0
-        width: 2000
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81b24e9bc8c07a3449264e48bca7c6db
-      internalID: 689136443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WeakAttackSpriteSheet_12
-      rect:
-        serializedVersion: 2
-        x: 10000
-        y: 0
-        width: 2000
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4de90f6c793b25b449adc18531fd6867
-      internalID: -1741553068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WeakAttackSpriteSheet_13
-      rect:
-        serializedVersion: 2
-        x: 12000
-        y: 0
-        width: 2000
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d58936bcf214624aa4228a8ef067dc0
-      internalID: -1427159619
       vertices: []
       indices: 
       edges: []
@@ -409,19 +325,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       WeakAttackSpriteSheet_1: -2147050129
-      WeakAttackSpriteSheet_13: -1427159619
-      WeakAttackSpriteSheet_6: 32732740
-      WeakAttackSpriteSheet_8: -890757754
-      WeakAttackSpriteSheet_9: 577260526
-      WeakAttackSpriteSheet_11: 689136443
+      WeakAttackSpriteSheet_6: 31274151
+      WeakAttackSpriteSheet_8: 577260526
+      WeakAttackSpriteSheet_9: -1891853529
       WeakAttackSpriteSheet_5: 1479372093
-      WeakAttackSpriteSheet_7: 31274151
+      WeakAttackSpriteSheet_7: -890757754
       WeakAttackSpriteSheet_3: -1344647264
       WeakAttackSpriteSheet_2: -1190955124
-      WeakAttackSpriteSheet_12: -1741553068
       WeakAttackSpriteSheet_0: 1151581801
       WeakAttackSpriteSheet_4: 1934172449
-      WeakAttackSpriteSheet_10: -1891853529
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

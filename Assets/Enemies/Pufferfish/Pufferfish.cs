@@ -58,7 +58,7 @@ public class Pufferfish : MonoBehaviour
         anim.SetBool("Attacking", false);
         anim.Play("Idle");
     }
-    public void HurtPuffer()
+    public void HurtPuffer(int damage)
     {
         //Only Hurt if we can
         if (!ishurt)
@@ -75,6 +75,8 @@ public class Pufferfish : MonoBehaviour
                 anim.SetBool("Dead", true);
                 anim.SetBool("Hurt", false);
             }
+
+            health -= damage;
         }
     }
 
@@ -99,7 +101,6 @@ public class Pufferfish : MonoBehaviour
         {
             ishurt = false;
             anim.SetBool("Hurt", false);
-            health--;
         }
     }
 

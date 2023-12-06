@@ -16,7 +16,7 @@ public class AttackWeakArea : MonoBehaviour
         var puffer = collider.GetComponent<Pufferfish>();
         if(puffer != null)
         {
-            puffer.HurtPuffer();
+            puffer.HurtPuffer(damage);
         }
     }
 

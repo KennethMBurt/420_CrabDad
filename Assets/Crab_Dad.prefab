@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8418728452331295235}
   - component: {fileID: 8418728452331295234}
   - component: {fileID: 8418728452331295237}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Crab_Dad
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8418728452393531972
 Transform:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8418728452779313767
 Transform:
   m_ObjectHideFlags: 0

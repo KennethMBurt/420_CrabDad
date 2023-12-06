@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 7757975407456695435}
   - component: {fileID: 5548005841835968778}
   m_Layer: 0
-  m_Name: Pufferfish
+  m_Name: Queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1828627923, guid: 64693d1e9487c45418cf03ba866848a7, type: 3}
+  m_Sprite: {fileID: 1410505315, guid: 5a475f50456767c4f963a81d2f3bc4cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   ishurt: 0
   isattack: 0
   crittime: 0
-  deathNoise: {fileID: 8300000, guid: 79cf1666acd2183438a8dc610cdd6a99, type: 3}
+  deathNoise: {fileID: 8300000, guid: b3545ded305a7c04498880e2aba8571b, type: 3}
 --- !u!114 &7757975407456695435
 MonoBehaviour:
   m_ObjectHideFlags: 0

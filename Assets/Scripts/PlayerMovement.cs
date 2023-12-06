@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 dashingDir;
     private bool isDashing = false;
     //private bool canDash = true;
+
+    bool goingUp = false;
+    bool falling = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -46,25 +50,21 @@ public class PlayerMovement : MonoBehaviour
         //if(isGrounded()){
         //    canDash = true;
         //}
-
-        
+        Move();
         Jump();
 	UpdateAnimationUpdate();
     }
 
     private void FixedUpdate(){
-        if(isDashing)
-            return;
-        Move();
+        
     }
 
     private void Move(){
-        if(Input.GetButtonDown("Sprint")){
+        if(Input.GetKey("left shift")){
             body.velocity = new Vector2(SPRINT_SPEED * horizontalInput, body.velocity.y);
 	    anim.SetBool("Sprint", true);
 	    anim.SetBool("Walking", false);
-	}
-        else{
+	} else{
             body.velocity = new Vector2(SPEED * horizontalInput, body.velocity.y);
 	    anim.SetBool("Walking", true);
 	    anim.SetBool("Sprint", false);
@@ -109,15 +109,19 @@ public class PlayerMovement : MonoBehaviour
 	    anim.SetBool("Walking", false);
 	    anim.SetBool("Sprint", false);
 	}
-	if(body.velocity.y > 0){
+	if(Math.Round(body.velocity.y) > 0 && !goingUp){
 	    anim.SetBool("GoingUp", true);
 	    anim.SetBool("Falling", false);
-	} else if(body.velocity.y < 0){
+	    goingUp = true;
+	} else if(Math.Round(body.velocity.y) < 0 && !falling){
 	    anim.SetBool("GoingUp", false);
 	    anim.SetBool("Falling", true);
-	} else{
+	    falling = true;
+	} else if(Math.Round(body.velocity.y) == 0){
 	    anim.SetBool("GoingUp", false);
 	    anim.SetBool("Falling", false);
+	    falling = false;
+	    goingUp = false;
 	}
     }
 

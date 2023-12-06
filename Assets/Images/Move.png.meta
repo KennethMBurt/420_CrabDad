@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 73
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,10 +107,10 @@ TextureImporter:
       name: Move_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 681
+        y: 1800
+        width: 954
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: Move_1
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 2741
+        y: 1795
+        width: 929
+        height: 570
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: Move_2
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 4785
+        y: 1795
+        width: 930
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: Move_3
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 6864
+        y: 1795
+        width: 902
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: Move_4
       rect:
         serializedVersion: 2
-        x: 8192
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 8908
+        y: 1795
+        width: 937
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Move_5
       rect:
         serializedVersion: 2
-        x: 10240
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 10959
+        y: 1795
+        width: 943
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,10 +233,10 @@ TextureImporter:
       name: Move_6
       rect:
         serializedVersion: 2
-        x: 12288
-        y: 1536
-        width: 2048
-        height: 1536
+        x: 13004
+        y: 1795
+        width: 936
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Move_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 1536
+        x: 718
+        y: 255
+        width: 902
+        height: 574
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,132 +267,6 @@ TextureImporter:
       bones: []
       spriteID: 5d49211c25c3cf643957b7ef3a27a780
       internalID: 486128903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_8
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2575d3c761f79b448ad5565a22a9792f
-      internalID: -1065283722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_9
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66f689425b08c494d826090c6ff44a55
-      internalID: -1257220260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_10
-      rect:
-        serializedVersion: 2
-        x: 6144
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69876c4372c72c6439c8ce239cdbc5ff
-      internalID: 1965938999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_11
-      rect:
-        serializedVersion: 2
-        x: 8192
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac29e6a63fccdae4b82585a1333d1462
-      internalID: 1148709709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_12
-      rect:
-        serializedVersion: 2
-        x: 10240
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a670a2fcecd1942449f1f4068633377f
-      internalID: 618081888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Move_13
-      rect:
-        serializedVersion: 2
-        x: 12288
-        y: 0
-        width: 2048
-        height: 1536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b59ee225d13c0149a0aaaf6da3a4587
-      internalID: -66215128
       vertices: []
       indices: 
       edges: []
@@ -410,14 +284,9 @@ TextureImporter:
     nameFileIdTable:
       Move_4: 143196396
       Move_8: -1065283722
-      Move_13: -66215128
-      Move_10: 1965938999
       Move_5: -1701070967
-      Move_11: 1148709709
       Move_6: 413621072
-      Move_9: -1257220260
       Move_2: 528280264
-      Move_12: 618081888
       Move_3: -1649420255
       Move_1: -1031801943
       Move_0: 390291035

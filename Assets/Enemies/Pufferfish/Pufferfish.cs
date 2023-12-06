@@ -31,7 +31,9 @@ public class Pufferfish : MonoBehaviour
         var collided = collision.collider.GetComponent<PlayerMovement>();
         if (collided != null)
         {
-            
+            //Send Em Flying Boys
+            Vector2 direction = (collided.gameObject.transform.position - body.transform.position).normalized;
+            collided.HurtPlayer(direction * 500f * Time.deltaTime, 1);
         }
 
     }
@@ -61,16 +63,17 @@ public class Pufferfish : MonoBehaviour
         //Only Hurt if we can
         if (!ishurt)
         {
-            isattack = false;
-            anim.SetBool("Attacking", false);
-
             ishurt = true;
+            isattack = false;
+
+            anim.SetBool("Attacking", false);
             anim.SetBool("Hurt", true);
 
             //If weve Blown Up Insta Kill So the hurt animation doesnt need to be messed with :p
             if (crittime)
             {
                 anim.SetBool("Dead", true);
+                anim.SetBool("Hurt", false);
             }
         }
     }
@@ -87,12 +90,21 @@ public class Pufferfish : MonoBehaviour
 
     public void EndHurt()
     {
-        if(health <= 0)
+        if (health <= 0)
+        {
             anim.SetBool("Dead", true);
+            anim.SetBool("Hurt", false);
+        }
         else
         {
             ishurt = false;
             anim.SetBool("Hurt", false);
+            health--;
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }

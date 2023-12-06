@@ -11,6 +11,13 @@ public class AttackWeakArea : MonoBehaviour
             Health health = collider.GetComponent<Health>();
             health.Damage(damage);
         }
+
+        //If PufferFish Call Hurt
+        var puffer = collider.GetComponent<Pufferfish>();
+        if(puffer != null)
+        {
+            puffer.HurtPuffer();
+        }
     }
 
 }

@@ -30,7 +30,7 @@ public class PlayerStrongAttack : MonoBehaviour
                 timer = 0f;
                 attacking = false;
                 attackArea.SetActive(attacking);
-		anim.SetBool("StrongAttack", false);
+		        anim.SetBool("StrongAttack", false);
             }
         }
     }
@@ -38,7 +38,7 @@ public class PlayerStrongAttack : MonoBehaviour
     private void Attack(){
         attacking = true;
         attackArea.SetActive(attacking);
-	anim.SetBool("StrongAttack", true);
+	    anim.SetBool("StrongAttack", true);
     }
 }
     

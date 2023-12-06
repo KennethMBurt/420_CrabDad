@@ -11,16 +11,20 @@ public class Pufferfish : MonoBehaviour
     public bool ishurt;
     public bool isattack;
     public bool crittime;
+    public AudioClip deathNoise;
     
     
     PlayerDetector detector;
     Animator anim;
     Collider2D body;
+    AudioSource source;
+
     private void Start()
     {
         body = GetComponent<Collider2D>();
         detector = GetComponent<PlayerDetector>();
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
         ishurt = false;
         isattack = false;
     }
@@ -104,6 +108,11 @@ public class Pufferfish : MonoBehaviour
         }
     }
 
+    public void playDeathNoise()
+    {
+        source.clip = deathNoise;
+        source.Play();
+    }
     public void Die()
     {
         Destroy(gameObject);

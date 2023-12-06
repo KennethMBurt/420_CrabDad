@@ -127,7 +127,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void HurtPlayer(Vector2 knockback, int damage)
     {
-        Debug.Log(knockback);
         //Knock Back
         body.AddForce(knockback, ForceMode2D.Impulse);
 

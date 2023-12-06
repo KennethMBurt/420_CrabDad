@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7757975407456695444, guid: 3cce7f9e983d11d4b9bf9328a03cf4ca, type: 3}
+      propertyPath: health
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7757975407456695447, guid: 3cce7f9e983d11d4b9bf9328a03cf4ca, type: 3}
       propertyPath: m_Name
       value: Pufferfish
@@ -464,6 +468,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8418728452331295245, guid: 8a4be632f8cac1f4081bda95bfd5fa5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418728452393531975, guid: 8a4be632f8cac1f4081bda95bfd5fa5a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418728452779313766, guid: 8a4be632f8cac1f4081bda95bfd5fa5a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

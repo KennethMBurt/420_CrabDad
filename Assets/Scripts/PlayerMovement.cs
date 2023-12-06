@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
-	anim = GetComponent<Animator>();
+	    anim = GetComponent<Animator>();
         
     }
 
@@ -125,4 +125,12 @@ public class PlayerMovement : MonoBehaviour
 	}
     }
 
+    public void HurtPlayer(Vector2 knockback, int damage)
+    {
+        Debug.Log(knockback);
+        //Knock Back
+        body.AddForce(knockback, ForceMode2D.Impulse);
+
+        //Play anim and Remove health
+    }
 }
